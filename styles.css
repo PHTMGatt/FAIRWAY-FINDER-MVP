@@ -1,0 +1,111 @@
+/* Reset & Base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #7fb7f3; /* pretty soft blue */
+  color: #102a43;       /* dark navy for easy reading */
+  line-height: 1.6;
+}
+
+/* Wrapper Container */
+.wrapper {
+  max-width: 960px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.4rem;
+  color: #002855;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #1a3e6f;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.section-heading {
+  color: #003f7f;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  border-bottom: 2px solid #84caff;
+  padding-bottom: 0.3rem;
+}
+
+/* Card Grid Layout */
+.grid-card {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 1rem;
+}
+
+/* Card Styles */
+.card {
+  background: #cbe3ff; /* baby blue, no white */
+  border-left: 5px solid #3ea8ff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.card ul {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.card li {
+  margin-bottom: 0.5rem;
+}
+
+/* Table Section */
+.table-wrap {
+  overflow-x: auto;
+  margin-top: 1.5rem;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #b0d6f9; /* soft blue background */
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Table Header */
+th {
+  background: #5ca3e6;
+  color: #f0f8ff;
+  font-weight: 600;
+  padding: 1rem;
+  text-align: left;
+}
+
+/* Table Body Cells */
+td {
+  background-color: #d4ecff;
+  color: #1d2a4a;
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid #a6c8e9;
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #679bc7;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #143c5b;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MVP</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrapper">
+    <h1>⛳ Fairway Finder: Golf Road Trip Planner</h1>
+    <p class="subtitle">A full-stack MERN application for planning golf road trips with course discovery, weather tracking, and saved itineraries.</p>
+
+    <section class="grid-card">
+      <div class="card">
+        <h2>🎯 Objective</h2>
+        <p>Allow users to plan road trips with golf stops, show hotels, and weather at each course stop using real-time APIs.</p>
+      </div>
+      <div class="card">
+        <h2>🧠 User Story</h2>
+        <p>As a golf enthusiast, I want to find and log courses along my road trip so I can enjoy better golf travel with weather and lodging support.</p>
+      </div>
+    </section>
+
+    <h2 class="section-heading">✅ MVP Features & Requirements Match</h2>
+    <section class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Feature</th><th>What It Does</th><th>Tech Used</th><th>Requirement</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>User Auth</td><td>Login/Signup with JWT</td><td>MongoDB + JWT</td><td>✔ JWT Authentication</td></tr>
+          <tr><td>Course Search</td><td>Nearby golf courses from Google Maps</td><td>Google Maps API + React</td><td>✔ Real-World API</td></tr>
+          <tr><td>Trip Logging</td><td>Save past golf outings</td><td>MongoDB + GraphQL</td><td>✔ MongoDB + Mutations</td></tr>
+          <tr><td>Trip Planning</td><td>Create/edit trip info</td><td>React + GraphQL</td><td>✔ Interactivity + Mutations</td></tr>
+          <tr><td>Map View</td><td>Course pins, route display</td><td>Google Maps JS SDK</td><td>✔ Interactive UI</td></tr>
+          <tr><td>Responsive UI</td><td>Mobile/tablet friendly</td><td>CSS Grid + Media Queries</td><td>✔ Responsive UI</td></tr>
+          <tr><td>GitHub Action</td><td>Run linter/test on push</td><td>GitHub Actions</td><td>✔ GitHub Action</td></tr>
+          <tr><td>Deployment</td><td>Live on Render with DB</td><td>Render + Atlas</td><td>✔ Deployment</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <h2 class="section-heading">🔧 Backend Schema</h2>
+    <section class="grid-card">
+      <div class="card">
+        <h3>Mongo Models</h3>
+        <ul>
+          <li><b>User:</b> name, email, password, trips[]</li>
+          <li><b>Trip:</b> courseName, lat/lng, date, notes, userId</li>
+          <li><b>Course:</b> name, address, lat/lng (optional)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>GraphQL</h3>
+        <ul>
+          <li><b>Queries:</b> getTrips, getUser, getTripById</li>
+          <li><b>Mutations:</b> addTrip, updateTrip, deleteTrip, login, signup</li>
+        </ul>
+      </div>
+    </section>
+
+    <h2 class="section-heading">📄 Pages & Stack</h2>
+    <section class="table-wrap">
+      <table>
+        <thead><tr><th>Page</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td>Home</td><td>Welcome page + CTA</td></tr>
+          <tr><td>Dashboard</td><td>See saved trips</td></tr>
+          <tr><td>New Trip</td><td>Add trip details</td></tr>
+          <tr><td>Map</td><td>Visual pins for stops</td></tr>
+          <tr><td>Auth</td><td>Login / Signup</td></tr>
+        </tbody>
+      </table>
+
+      <table>
+        <thead><tr><th>Frontend</th><th>Backend</th><th>External</th></tr></thead>
+        <tbody>
+          <tr><td>React + Apollo</td><td>Express + Apollo</td><td>Google Maps API</td></tr>
+          <tr><td>Chakra UI or CSS</td><td>GraphQL, JWT</td><td>OpenWeatherMap</td></tr>
+          <tr><td>React Router</td><td>Mongoose ODM</td><td>MongoDB Atlas</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <h2 class="section-heading">💡 Optional Features (Stretch Goals)</h2>
+    <div class="grid-card">
+      <div class="card">
+        <ul>
+          <li>Save trips to localStorage or a database</li>
+          <li>User login + saved trips (JWT-based auth)</li>
+          <li>Filter courses by rating or type (public/private)</li>
+          <li>Show driving distance and estimated tee time fit</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 class="section-heading">📊 What You Can Present</h2>
+    <div class="grid-card">
+      <div class="card">
+        <ul>
+          <li>Live Demo – Plan a trip and show golf courses + hotels + weather</li>
+          <li>Architecture Diagram – Show API + client interactions</li>
+          <li>API Calls – Show examples of Places/Weather API usage</li>
+          <li>User Story Flow – From start to end trip creation</li>
+          <li>Code Highlights – Emphasize API fetching, auth, and map rendering</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 class="section-heading">📚 Educational Value</h2>
+    <div class="grid-card">
+      <div class="card">
+        <ul>
+          <li>API integration and real-world data usage</li>
+          <li>Frontend mapping and UI design</li>
+          <li>Optional full-stack capability</li>
+          <li>Domain-specific UX (focused on golf travel)</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <p>📦 GitHub Repo: <code>/client</code> & <code>/server</code> | Use .env for JWT, API Keys | Deployed with Render</p>
+    </footer>
+  </main>
+</body>
+</html>
