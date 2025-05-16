@@ -5,4 +5,4 @@ Plan your next golf road trip with interactive course discovery, lodging suggest
 Built with the MERN stack and integrated with Google Maps and OpenWeather APIs.
 
 ### 🔗 Live MVP:
-[Fairway Finder on Render](https://your-render-link.onrender.com)
+[Fairway Finder on Render](https://fairway-finder-mvp.onrender.com)
